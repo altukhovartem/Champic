@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/CHampionship/Data/bin/Debug/netstandard2.0
+/CHampionship/Data/obj
+/CHampionship/.vs/CHampionship/v16
