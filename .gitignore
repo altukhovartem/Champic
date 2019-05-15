@@ -2,3 +2,7 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 /CHampionship/.vs/CHampionship/v16/Server/sqlite3/db.lock
+/CHampionship/.vs/CHampionship/DesignTimeBuild/.dtbcache
+/CHampionship/.vs/CHampionship/v16/Server/sqlite3/storage.ide-shm
+/CHampionship/.vs/CHampionship/v16/Server/sqlite3/storage.ide-wal
+/CHampionship/.vs/CHampionship/v16/.suo
