@@ -12,3 +12,6 @@ C:\myRepos\Champic\CHampionship\TrackerUI\obj\Debug\TrackerUI.CreateTournamentFo
 C:\myRepos\Champic\CHampionship\TrackerUI\obj\Debug\TrackerUI.CreateTeamForm.resources
 C:\myRepos\Champic\CHampionship\TrackerUI\obj\Debug\TrackerUI.CreatePrizeForm.resources
 C:\myRepos\Champic\CHampionship\TrackerUI\obj\Debug\TrackerUI.TournamentDashboardForm.resources
+C:\myRepos\Champic\CHampionship\TrackerUI\bin\Debug\TrackerLibrary.dll
+C:\myRepos\Champic\CHampionship\TrackerUI\bin\Debug\TrackerLibrary.pdb
+C:\myRepos\Champic\CHampionship\TrackerUI\obj\Debug\TrackerUI.csproj.CopyComplete
