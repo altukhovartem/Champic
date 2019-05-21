@@ -6,4 +6,3 @@ C:\myRepos\Champic\CHampionship\Data\obj\Debug\netstandard2.0\TrackerLibrary.Ass
 C:\myRepos\Champic\CHampionship\Data\obj\Debug\netstandard2.0\TrackerLibrary.AssemblyInfo.cs
 C:\myRepos\Champic\CHampionship\Data\obj\Debug\netstandard2.0\TrackerLibrary.dll
 C:\myRepos\Champic\CHampionship\Data\obj\Debug\netstandard2.0\TrackerLibrary.pdb
-C:\myRepos\Champic\CHampionship\Data\obj\Debug\netstandard2.0\TrackerLibrary.csprojAssemblyReference.cache
