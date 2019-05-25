@@ -1,5 +1,13 @@
 ################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
-/CHampionship/.vs/CHampionship/v16/.suo
-/CHampionship/TrackerUI/obj/Debug/TrackerUI.csprojAssemblyReference.cache
+
+#Ignore files built by Visual Studio
+*.suo
+*.cache
+.dtbcache
+*.ide
+*.ide-scm
+*.ide-wal
+*.user
+*.csprojAssemblyReference.cache
