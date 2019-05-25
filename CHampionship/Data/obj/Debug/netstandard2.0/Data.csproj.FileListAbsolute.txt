@@ -1,9 +1,0 @@
-C:\myRepos\Champic\CHampionship\Data\bin\Debug\netstandard2.0\Data.deps.json
-C:\myRepos\Champic\CHampionship\Data\bin\Debug\netstandard2.0\Data.dll
-C:\myRepos\Champic\CHampionship\Data\bin\Debug\netstandard2.0\Data.pdb
-C:\myRepos\Champic\CHampionship\Data\obj\Debug\netstandard2.0\Data.csprojAssemblyReference.cache
-C:\myRepos\Champic\CHampionship\Data\obj\Debug\netstandard2.0\Data.csproj.CoreCompileInputs.cache
-C:\myRepos\Champic\CHampionship\Data\obj\Debug\netstandard2.0\Data.AssemblyInfoInputs.cache
-C:\myRepos\Champic\CHampionship\Data\obj\Debug\netstandard2.0\Data.AssemblyInfo.cs
-C:\myRepos\Champic\CHampionship\Data\obj\Debug\netstandard2.0\Data.dll
-C:\myRepos\Champic\CHampionship\Data\obj\Debug\netstandard2.0\Data.pdb

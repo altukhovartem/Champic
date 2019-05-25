@@ -1,9 +1,0 @@
-C:\myRepos\Champic\CHampionship\Data\bin\Debug\netstandard2.0\TrackerLibrary.deps.json
-C:\myRepos\Champic\CHampionship\Data\bin\Debug\netstandard2.0\TrackerLibrary.dll
-C:\myRepos\Champic\CHampionship\Data\bin\Debug\netstandard2.0\TrackerLibrary.pdb
-C:\myRepos\Champic\CHampionship\Data\obj\Debug\netstandard2.0\TrackerLibrary.csproj.CoreCompileInputs.cache
-C:\myRepos\Champic\CHampionship\Data\obj\Debug\netstandard2.0\TrackerLibrary.AssemblyInfoInputs.cache
-C:\myRepos\Champic\CHampionship\Data\obj\Debug\netstandard2.0\TrackerLibrary.AssemblyInfo.cs
-C:\myRepos\Champic\CHampionship\Data\obj\Debug\netstandard2.0\TrackerLibrary.dll
-C:\myRepos\Champic\CHampionship\Data\obj\Debug\netstandard2.0\TrackerLibrary.pdb
-C:\myRepos\Champic\CHampionship\Data\obj\Debug\netstandard2.0\TrackerLibrary.csprojAssemblyReference.cache

@@ -1,9 +1,0 @@
-C:\myRepos\Champic\CHampionship\TrackerLibraryNew\bin\Debug\TrackerLibrary.dll
-C:\myRepos\Champic\CHampionship\TrackerLibraryNew\bin\Debug\TrackerLibrary.pdb
-C:\myRepos\Champic\CHampionship\TrackerLibraryNew\obj\Debug\TrackerLibrary.csproj.CoreCompileInputs.cache
-C:\myRepos\Champic\CHampionship\TrackerLibraryNew\obj\Debug\TrackerLibrary.dll
-C:\myRepos\Champic\CHampionship\TrackerLibraryNew\obj\Debug\TrackerLibrary.pdb
-C:\myRepos\Champic\CHampionship\TrackerLibraryNew\bin\Debug\Dapper.dll
-C:\myRepos\Champic\CHampionship\TrackerLibraryNew\bin\Debug\Dapper.xml
-C:\myRepos\Champic\CHampionship\TrackerLibraryNew\obj\Debug\TrackerLibrary.csprojAssemblyReference.cache
-C:\myRepos\Champic\CHampionship\TrackerLibraryNew\obj\Debug\TrackerLibrary.csproj.CopyComplete

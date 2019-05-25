@@ -1,6 +1,0 @@
-C:\myRepos\Champic\CHampionship\TrackerLibraryNew\bin\Debug\TrackerLibraryNew.dll
-C:\myRepos\Champic\CHampionship\TrackerLibraryNew\bin\Debug\TrackerLibraryNew.pdb
-C:\myRepos\Champic\CHampionship\TrackerLibraryNew\obj\Debug\TrackerLibraryNew.csprojAssemblyReference.cache
-C:\myRepos\Champic\CHampionship\TrackerLibraryNew\obj\Debug\TrackerLibraryNew.csproj.CoreCompileInputs.cache
-C:\myRepos\Champic\CHampionship\TrackerLibraryNew\obj\Debug\TrackerLibraryNew.dll
-C:\myRepos\Champic\CHampionship\TrackerLibraryNew\obj\Debug\TrackerLibraryNew.pdb
