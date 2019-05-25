@@ -5,7 +5,7 @@
 #Ignore files built by Visual Studio
 *.suo
 *.cache
-.dtbcache
+*.dtbcache
 *.ide
 *.ide-scm
 *.ide-wal
