@@ -11,3 +11,4 @@
 *.ide-wal
 *.user
 *.csprojAssemblyReference.cache
+*.csproj.FileListAbsolute.txt
