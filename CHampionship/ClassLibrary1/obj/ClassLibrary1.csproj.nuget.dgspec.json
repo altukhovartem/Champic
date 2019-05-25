@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\myRepos\\Champic\\CHampionship\\Data\\TrackerLibrary.csproj": {}
+    "C:\\myRepos\\Champic\\CHampionship\\ClassLibrary1\\ClassLibrary1.csproj": {}
   },
   "projects": {
-    "C:\\myRepos\\Champic\\CHampionship\\Data\\TrackerLibrary.csproj": {
+    "C:\\myRepos\\Champic\\CHampionship\\ClassLibrary1\\ClassLibrary1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\myRepos\\Champic\\CHampionship\\Data\\TrackerLibrary.csproj",
-        "projectName": "TrackerLibrary",
-        "projectPath": "C:\\myRepos\\Champic\\CHampionship\\Data\\TrackerLibrary.csproj",
+        "projectUniqueName": "C:\\myRepos\\Champic\\CHampionship\\ClassLibrary1\\ClassLibrary1.csproj",
+        "projectName": "ClassLibrary1",
+        "projectPath": "C:\\myRepos\\Champic\\CHampionship\\ClassLibrary1\\ClassLibrary1.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\myRepos\\Champic\\CHampionship\\Data\\obj\\",
+        "outputPath": "C:\\myRepos\\Champic\\CHampionship\\ClassLibrary1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -41,10 +41,6 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
-            "Microsoft.CSharp": {
-              "target": "Package",
-              "version": "[4.5.0, )"
-            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
