@@ -10,6 +10,25 @@ namespace TrackerLibrary.DataAccess
 {
     public class SQLConnector : IDataConnections
     {
+        public PersonModel CreatePerson(PersonModel model)
+        {
+            using (IDbConnection connection = new SqlConnection(GlobalConfig.CnnString("Tournaments")))
+            {
+                var p = new DynamicParameters();
+                p.Add("@FirstName", model.FirstName);
+                p.Add("@LastName", model.LastName);
+                p.Add("@EmailAddress", model.EmailAddress);
+                p.Add("@CellphoneNumber", model.CellphoneNumber);
+                p.Add("@Id", 0, dbType: DbType.Int32, direction: ParameterDirection.Output);
+
+                connection.Execute("dbo.spPeople_Insert", p, commandType: CommandType.StoredProcedure);
+
+                model.id = p.Get<int>("@Id");
+
+                return model;
+            }
+        }
+
         // TODO - Make the CreatePrize method actually save to the database
         /// <summary>
         /// Save a new prize to the database
@@ -34,5 +53,6 @@ namespace TrackerLibrary.DataAccess
                 return model;
             }
         }
+
     }
 }
