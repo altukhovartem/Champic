@@ -17,6 +17,16 @@ namespace TrackerUI
         public CreateTeamForm()
         {
             InitializeComponent();
+            //CreateSampleData();
+            WireUpLists();
+        }
+
+        private void CreateSampleData()
+        {
+            availableTeamMembers.Add(new PersonModel { FirstName = "Artem", LastName = "Altukhov" });
+            availableTeamMembers.Add(new PersonModel { FirstName = "Elena", LastName = "Abilova" });
+            selectedTeamMembers.Add(new PersonModel { FirstName = "Vladimir", LastName = "Tarasenko" });
+            selectedTeamMembers.Add(new PersonModel { FirstName = "Ivan", LastName = "Telegin" });
         }
 
         private void GroupBox1_Enter(object sender, EventArgs e)
@@ -29,6 +39,20 @@ namespace TrackerUI
 
         }
 
+        private List<PersonModel> availableTeamMembers = GlobalConfig.Connection.GetPerson_All();
+        private List<PersonModel> selectedTeamMembers = new List<PersonModel>();
+
+        private void WireUpLists()
+        {
+            selectTeamMemberDropDown.DataSource = null;
+            selectTeamMemberDropDown.DataSource = availableTeamMembers;
+            selectTeamMemberDropDown.DisplayMember = "FullName";
+
+            teamMembersListBox.DataSource = null;
+            teamMembersListBox.DataSource = selectedTeamMembers;
+            teamMembersListBox.DisplayMember = "FullName";
+        }
+
         private void CreateMemberButton_Click(object sender, EventArgs e)
         {
             if(ValidateForm())
@@ -39,7 +63,10 @@ namespace TrackerUI
                 p.EmailAddress = emailValue.Text;
                 p.CellphoneNumber = cellPhoneValue.Text;
 
-                GlobalConfig.Connection.CreatePerson(p);
+                p = GlobalConfig.Connection.CreatePerson(p);
+                selectedTeamMembers.Add(p);
+                WireUpLists();
+
                 firstNameValueTextBox.Text = "";
                 lastNameValueTextbox.Text = "";
                 emailValue.Text = "";
@@ -76,6 +103,28 @@ namespace TrackerUI
             }
 
             return true;
+        }
+
+        private void AddMemberButton_Click(object sender, EventArgs e)
+        {
+            PersonModel p = (PersonModel)selectTeamMemberDropDown.SelectedItem;
+            if (p!=null)
+            {
+                availableTeamMembers.Remove(p);
+                selectedTeamMembers.Add(p);
+                WireUpLists(); 
+            }
+        }
+
+        private void RemoveSelectedMemberButton_Click(object sender, EventArgs e)
+        {
+            PersonModel p = (PersonModel)teamMembersListBox.SelectedItem;
+            if (p != null)
+            {
+                selectedTeamMembers.Remove(p);
+                availableTeamMembers.Add(p);
+                WireUpLists(); 
+            }
         }
     }
 }
