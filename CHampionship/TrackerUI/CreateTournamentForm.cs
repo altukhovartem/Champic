@@ -12,7 +12,7 @@ using TrackerLibrary.Models;
 
 namespace TrackerUI
 {
-    public partial class CreateTournamentForm : Form
+    public partial class CreateTournamentForm : Form, IPrizeRequester, ITeamRequester
     {
         List<TeamModel> availableTeams = GlobalConfig.Connection.GetTeam_All();
         List<TeamModel> selectedTeams = new List<TeamModel>();
@@ -51,6 +51,55 @@ namespace TrackerUI
             {
                 availableTeams.Remove(t);
                 selectedTeams.Add(t);
+                WireUpLists();
+            }
+        }
+
+        private void CreatePrizeButton_Click(object sender, EventArgs e)
+        {
+            // Call the createPrize form
+            CreatePrizeForm frm = new CreatePrizeForm(this);
+            frm.Show();
+
+        }
+
+        public void PrizeComplete(PrizeModel model)
+        {
+            // get back from the form a PrizeModel
+            // Take the prizeModel and it into out list of selected prizes
+            selectedPrizes.Add(model);
+            WireUpLists();
+        }
+
+        public void TeamComplete(TeamModel model)
+        {
+            selectedTeams.Add(model);
+            WireUpLists();
+        }
+
+        private void CreateTeamLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            CreateTeamForm frm = new CreateTeamForm(this);
+            frm.Show();
+        }
+
+        private void RemoveSelectedPlayersButton_Click(object sender, EventArgs e)
+        {
+            TeamModel t = (TeamModel)tournamentTeamsListBox.SelectedItem;
+            if(t != null)
+            {
+                selectedTeams.Remove(t);
+                availableTeams.Add(t);
+                WireUpLists();
+            }
+        }
+
+        private void RemoveSelectedPrizeButton_Click(object sender, EventArgs e)
+        {
+            PrizeModel p = (PrizeModel)prizesListBox.SelectedItem;
+            if(p != null)
+            {
+                selectedPrizes.Remove(p);
                 WireUpLists();
             }
         }
