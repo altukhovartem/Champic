@@ -10,8 +10,6 @@ namespace TrackerLibrary
     {
         public static IDataConnections Connection { get; private set; }
 
-
-
         public static void InitializeConnections(DatabaseType db)
         {
             if(db == DatabaseType.Sql)

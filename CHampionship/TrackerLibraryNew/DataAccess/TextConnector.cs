@@ -28,7 +28,6 @@ namespace TrackerLibrary.DataAccess
             return model;
         }
 
-
         // TODO - Wire up the CreatePrize for text files
         public PrizeModel CreatePrize(PrizeModel model)
         {
@@ -73,7 +72,6 @@ namespace TrackerLibrary.DataAccess
         public List<PersonModel> GetPerson_All()
         {
             return PeopleFile.FullFilePath().LoadFile().ConvertToPersonModels();
-
         }
     }
 }
