@@ -2,6 +2,8 @@
 {
     public class MatchupEntryModel
     {
+        public int Id { get; set; }
+        public int TeamCompetingID { get; set; }
         /// <summary>
         /// Represents one team in the matchup
         /// </summary>
@@ -11,6 +13,7 @@
         /// Represents the score for this particular team
         /// </summary>
         public double Score { get; set; }
+        public int ParentMatchupID { get; set; }
 
         /// <summary>
         /// Represents the matchup that this team came from as the winner
