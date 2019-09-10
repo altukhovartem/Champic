@@ -45,7 +45,7 @@ namespace TrackerUI
             t.TeamName = teamNameValueTextBox.Text;
             t.TeamMembers = selectedTeamMembers;
 
-            t = GlobalConfig.Connection.CreateTeam(t);
+            GlobalConfig.Connection.CreateTeam(t);
             callingForm.TeamComplete(t);
             this.Close();
         }
@@ -73,7 +73,7 @@ namespace TrackerUI
                 p.EmailAddress = emailValue.Text;
                 p.CellphoneNumber = cellPhoneValue.Text;
 
-                p = GlobalConfig.Connection.CreatePerson(p);
+                GlobalConfig.Connection.CreatePerson(p);
                 selectedTeamMembers.Add(p);
                 WireUpLists();
 

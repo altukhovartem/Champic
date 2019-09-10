@@ -16,7 +16,7 @@ namespace TrackerLibrary.DataAccess
 		private const string MatchupFile = "MatchupModels.csv";
 		private const string MutchupEntryFile = "MutchupEntryModels.csv";
 
-		public PersonModel CreatePerson(PersonModel model)
+		public void CreatePerson(PersonModel model)
         {
             List<PersonModel> people = PeopleFile.FullFilePath().LoadFile().ConvertToPersonModels();
             int currentID = 1;
@@ -27,11 +27,10 @@ namespace TrackerLibrary.DataAccess
             model.id = currentID;
             people.Add(model);
             people.SaveToPeopleFile(PeopleFile);
-            return model;
         }
 
         // TODO - Wire up the CreatePrize for text files
-        public PrizeModel CreatePrize(PrizeModel model)
+        public void CreatePrize(PrizeModel model)
         {
             // load the test file and convert the file to List<PrizeModel>            
             List<PrizeModel> prizes = PrizesFile.FullFilePath().LoadFile().ConvertToPrizeModels();
@@ -50,10 +49,9 @@ namespace TrackerLibrary.DataAccess
             // convert the prizes to a List<strings>
             // save list to the text file
             prizes.SaveToPrizeFile(PrizesFile);
-            return model;
         }
 
-        public TeamModel CreateTeam(TeamModel model)
+        public void CreateTeam(TeamModel model)
         {
             List<TeamModel> teams = TeamFile.FullFilePath().LoadFile().ConvertToTeamModels(PeopleFile);
             int currentID = 1;
@@ -68,7 +66,6 @@ namespace TrackerLibrary.DataAccess
             // convert the prizes to a List<strings>
             // save list to the text file
             teams.SaveToTeamFile(TeamFile);
-            return model;
         }
 
         public void CreateTournament(TournamentModel model)
@@ -103,6 +100,11 @@ namespace TrackerLibrary.DataAccess
         public List<TournamentModel> GetTournaments_All()
         {
             return TournamentFile.FullFilePath().LoadFile().ConvertToTournamentModels(TeamFile, PeopleFile, PrizesFile);
+        }
+
+        public void UpdateMatchup(MatchupModel model)
+        {
+            model.UpdateMatchupToFile();
         }
     }
 }
