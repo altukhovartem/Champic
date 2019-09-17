@@ -86,6 +86,7 @@ namespace TrackerLibrary.DataAccess
                 SaveTournamentPrizes(connection, model);
                 SaveTournamentEntries(connection, model);
                 SaveTournamentRounds(connection, model);
+                TournamentLogic.UpdateTournamentResults(model);
             }
         }
 
@@ -284,7 +285,7 @@ namespace TrackerLibrary.DataAccess
             {
                 var p = new DynamicParameters();
                 p.Add("@ID", model.Id);
-                p.Add("@WinnerID", model.Winner.Id);
+                p.Add("@WinnerID", model.Winner?.Id);
 
                 connection.Execute("dbo.spMatchups_Update", p, commandType: CommandType.StoredProcedure);
 
