@@ -9,7 +9,7 @@ namespace TrackerLibrary.Models
     /// </summary>
     public class TournamentModel
     {
-
+        public int Id { get; set; }
         public string TournamentName { get; set; }
 
         /// <summary>
@@ -32,6 +32,7 @@ namespace TrackerLibrary.Models
         /// This particular property represents the list of list of rounds of the tournament
         /// </summary>
         public List<List<MatchupModel>> Rounds { get; set; } = new List<List<MatchupModel>>();
+
 
     }
 }
