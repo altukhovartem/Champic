@@ -133,6 +133,7 @@ namespace TrackerUI
             // create all of the team entries 
             GlobalConfig.Connection.CreateTournament(tm);
 
+            tm.AlertUsersToNewRound();
 
             TournamentViewer frm = new TournamentViewer(tm);
             frm.Show();
