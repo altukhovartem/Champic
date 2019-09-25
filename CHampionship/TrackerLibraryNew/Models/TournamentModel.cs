@@ -9,6 +9,13 @@ namespace TrackerLibrary.Models
     /// </summary>
     public class TournamentModel
     {
+        public event EventHandler<DateTime> OnTournamentComplete;
+        
+        public void CompleteTournament()
+        {
+            OnTournamentComplete?.Invoke(this, DateTime.Now);
+        }
+
         public int Id { get; set; }
         public string TournamentName { get; set; }
 
